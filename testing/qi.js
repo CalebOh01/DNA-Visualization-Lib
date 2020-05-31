@@ -31,4 +31,4 @@ function qi(sequence) {
     return result
 }
 
-console.log(qi('AACCTTGG'))
+console.log(qi('ACTG'))

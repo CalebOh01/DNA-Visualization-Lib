@@ -9,16 +9,15 @@ function yau_bp(sequence) {
         xCoord++
         x.push(xCoord)
         if (character == "A") {
-            y.push(yCoord - 1)
+            yCoord = yCoord - 1
         } else if (character == "C") {
-            y.push(yCoord + 0.5)
+            yCoord = yCoord + 0.5
         } else if (character == "T") {
-            y.push(yCoord + 1)
+            yCoord = yCoord + 1
         } else if (character == "G") {
-            y.push(yCoord - 0.5)
-        } else {
-            y.push(yCoord)
+            yCoord = yCoord - 0.5
         }
+        y.push(yCoord)
     }
     let result = []
     result.push(x)
@@ -26,4 +25,4 @@ function yau_bp(sequence) {
     return result
 }
 
-console.log(yau_bp('ACATCTGTCTGGGTATGTC'))
+console.log(yau_bp('ACGT'))

@@ -41,21 +41,20 @@ function yau(sequence) {
     for (let _i = 0; _i < sequence.length; _i++) {
         let character = sequence[_i]
         if (character == "A") {
-            x.push(xCoord + 0.5)
-            y.push(yCoord - ((3**0.5)/2))
+            xCoord = xCoord + 0.5
+            yCoord = yCoord - ((3**0.5)/2)
         } else if (character == "C") {
-            x.push(xCoord + ((3**0.5)/2))
-            y.push(yCoord + 0.5)
+            xCoord = xCoord + ((3**0.5)/2)
+            yCoord = yCoord + 0.5
         } else if (character == "T") {
-            x.push(xCoord + 0.5)
-            y.push(yCoord + ((3**0.5)/2))
+            xCoord = xCoord + 0.5
+            yCoord = yCoord + ((3**0.5)/2)
         } else if (character == "G") {
-            x.push(xCoord + ((3**0.5)/2))
-            y.push(yCoord - 0.5)
-        } else {
-            y.push(yCoord)
-            y.push(yCoord)
-        }
+            xCoord = xCoord + ((3**0.5)/2)
+            yCoord = yCoord - 0.5
+        } 
+        x.push(xCoord)
+        y.push(yCoord)
     }
     let result = []
     result.push(x)
@@ -74,16 +73,15 @@ function yau_bp(sequence) {
         xCoord++
         x.push(xCoord)
         if (character == "A") {
-            y.push(yCoord - 1)
+            yCoord = yCoord - 1
         } else if (character == "C") {
-            y.push(yCoord + 0.5)
+            yCoord = yCoord + 0.5
         } else if (character == "T") {
-            y.push(yCoord + 1)
+            yCoord = yCoord + 1
         } else if (character == "G") {
-            y.push(yCoord - 0.5)
-        } else {
-            y.push(yCoord)
+            yCoord = yCoord - 0.5
         }
+        y.push(yCoord)
     }
     let result = []
     result.push(x)
