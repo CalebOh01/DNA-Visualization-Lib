@@ -1,3 +1,4 @@
+//squiggle
 function squiggle(sequence) {
     let x = [0.0]
     let y = [0.0]
@@ -31,7 +32,7 @@ function squiggle(sequence) {
     result.push(y)
     return result
 }
-
+//yau
 function yau(sequence) {
     let x = [0.0]
     let y = [0.0]
@@ -61,7 +62,7 @@ function yau(sequence) {
     result.push(y)
     return result
 }
-
+//yau-bp
 function yau_bp(sequence) {
     let x = [0.0]
     let y = [0.0]
@@ -88,7 +89,7 @@ function yau_bp(sequence) {
     result.push(y)
     return result
 }
-
+//randic
 function randic(sequence) {
     let x = [0.0]
     let y = [0.0]
@@ -108,7 +109,7 @@ function randic(sequence) {
     result.push(y)
     return result
 }
-
+//qi
 function qi(sequence) {
     let x = [0.0]
     let y = [0.0]
@@ -135,6 +136,31 @@ function qi(sequence) {
         count++
         x.push(count)
         y.push(key[sequence[i] + sequence[i+1]])
+    }
+    let result = []
+    result.push(x)
+    result.push(y)
+    return result
+}
+//gates
+function gates(sequence) {
+    let x = [0.0]
+    let y = [0.0]
+    let xCoord = 0.0
+    let yCoord = 0.0
+    for (let _i = 0; _i < sequence.length; _i++) {
+        let character = sequence[_i]
+        if (character == "A") {
+            yCoord--
+        } else if (character == "C") {  
+            xCoord--
+        } else if (character == "T") {
+            yCoord++
+        } else if (character == "G") {
+            xCoord++
+        } 
+        x.push(xCoord)
+        y.push(yCoord)
     }
     let result = []
     result.push(x)
