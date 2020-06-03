@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CalebOh01/DNAVisualization.git"
+    "url": "git+https://github.com/Lab41/dnaviz.js.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CalebOh01/DNAVisualization/issues"
+    "url": "https://github.com/Lab41/dnaviz.js/issues"
   },
-  "homepage": "https://github.com/CalebOh01/DNAVisualization#readme"
+  "homepage": "https://github.com/Lab41/dnavis.js#readme"
 }
