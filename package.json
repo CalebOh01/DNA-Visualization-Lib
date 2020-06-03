@@ -1,0 +1,19 @@
+{
+  "name": "dna_viz",
+  "version": "1.0.0",
+  "description": "DNA visualization functions for Node, the browser, and beyond",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebOh01/DNAVisualization.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebOh01/DNAVisualization/issues"
+  },
+  "homepage": "https://github.com/CalebOh01/DNAVisualization#readme"
+}
