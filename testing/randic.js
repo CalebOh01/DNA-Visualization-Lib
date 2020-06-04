@@ -9,7 +9,7 @@ function randic(sequence) {
         'N': 4
     }
     for (let i = 0; i < sequence.length; i++) {
-        x.push(i)
+        x.push(i + 1)
         y.push(key[sequence[i]])
     }
     let result = []
