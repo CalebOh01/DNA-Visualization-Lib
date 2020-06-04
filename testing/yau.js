@@ -28,4 +28,4 @@ function yau(sequence) {
     return result
 }
 
-console.log(yau('ACTCGCTGCTTCGGGCTAGCTAGCTA'))
+module.exports = yau;

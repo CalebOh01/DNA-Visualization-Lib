@@ -31,4 +31,4 @@ function qi(sequence) {
     return result
 }
 
-console.log(qi('ACTG'))
+module.exports = qi;

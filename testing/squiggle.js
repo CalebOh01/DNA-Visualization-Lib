@@ -6,7 +6,7 @@ function squiggle(sequence) {
     for (let _i = 0; _i < sequence.length; _i++) {
         let character = sequence[_i]
         x.push(x[x.length - 1] + 0.5)
-        x.push(x[x.length - 1] + 1.0)                   
+        x.push(x[x.length - 1] + 0.5)
         if (character == "A") {
             y.push(yCoord + 0.5)
             y.push(yCoord)
@@ -32,4 +32,5 @@ function squiggle(sequence) {
     return result
 }
 
-console.log(squiggle('ACTCTCTCTCTCTCCTCTTTCTCTC'))
+module.exports = squiggle;
+

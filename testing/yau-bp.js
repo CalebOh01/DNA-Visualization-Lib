@@ -25,4 +25,4 @@ function yau_bp(sequence) {
     return result
 }
 
-console.log(yau_bp('ACATCTGTCTGGGTATGTC'))
+module.exports = yau_bp

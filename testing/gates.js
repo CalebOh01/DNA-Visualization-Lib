@@ -23,4 +23,4 @@ function gates(sequence) {
     return result
 }
 
-console.log(gates('ACTGACTGACTG'))
+module.exports = gates;

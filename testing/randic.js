@@ -18,4 +18,4 @@ function randic(sequence) {
     return result
 }
 
-console.log(randic('AACCTTGG'))
+module.exports = randic;
